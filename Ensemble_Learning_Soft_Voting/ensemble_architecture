@@ -1,0 +1,15 @@
+digraph {
+	A [label="Base Models:
+Xception
+VGG19
+ResNet50
+EfficientNet
+MobileNetV2"]
+	B [label="Predicted Probabilities"]
+	C [label="Stacking Meta-Models:
+RF, LR, XGB, NN"]
+	D [label="Final Prediction"]
+	A -> B
+	B -> C
+	C -> D
+}
